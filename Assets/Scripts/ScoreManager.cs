@@ -8,17 +8,24 @@ public class ScoreManager : MonoBehaviour
     public int score;
     public Text scoreDisplay;
 
+
+
+    //public GameObject gameover;
+    //private bool gameoverStatus = false;
+
     public void Update()
     {
         scoreDisplay.text = score.ToString();
     }
 
-    private void OnTriggerEnter2D(Collider2D obsCollision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (obsCollision.CompareTag("Obstacle"))
-        {
-            score++;
+        
+            if (other.CompareTag("Obstacle"))
+            {
+                score++;
           //  Debug.Log("score: " + score);
-        }
+            }
+        
     }
 }

@@ -972,6 +972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreDisplay: {fileID: 1523359541}
+  gameover: {fileID: 422665791}
 --- !u!1 &1523359539
 GameObject:
   m_ObjectHideFlags: 0

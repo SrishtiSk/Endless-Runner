@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
 
     public GameObject gameover;
     public GameObject PopSound;
-
+   // public bool gameoverStatus = false;
 
     public void Start()
     {
@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {
             gameover.SetActive(true);
+          //  gameoverStatus = true;
             Destroy(gameObject);
         }
 
